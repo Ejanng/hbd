@@ -177,7 +177,7 @@ body {
           animation-delay: 4s;
 }
   
-.background-music {
+#background-music {
   padding: 30px 40px;
   border: 2px solid #ffffff; /* Adjust color to slightly contrast with the background */
   background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
@@ -189,7 +189,7 @@ body {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.background-music:hover {
+#background-music:hover {
   background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
   color: #000000; /* Change text color on hover */
   transform: scale(1.05); /* Slight zoom effect */
@@ -207,12 +207,12 @@ body {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&amp;display=swap" rel="stylesheet">
 
-  <audio class="background-music" loop>
+  <audio id="background-music" loop>
   <source src="hbd.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
-<button class="background-music" onclick="document.getElementById('background-music').play(); this.style.display='none';">
+<button onclick="document.getElementById('background-music').play(); this.style.display='none';">
   Click me!
 </button>
   
