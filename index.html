@@ -184,7 +184,6 @@ body {
   color: #11437c; /* White text */
   font-family: 'Dynapuff', sans-serif;
   font-size: 2.0em;
-  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   width: 100%; /* Make the audio player full width */
@@ -201,6 +200,11 @@ body {
 .button-pad {
   padding: 2em;
   background-image: linear-gradient(to bottom right, rgb(202, 26, 135), rgb(156, 27, 216));
+  border-radius: 25px;
+}
+
+.emojis {
+  font-size: 3em;
 }
 </style>
 
@@ -221,6 +225,7 @@ body {
 
 <button class="button-pad" onclick="document.getElementById('background-music').play(); this.style.display='none';">
   Click me!
+  <p class="emojis">🥳</p>
 </button>
   
 
